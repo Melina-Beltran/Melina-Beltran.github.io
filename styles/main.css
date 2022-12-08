@@ -1,0 +1,234 @@
+/*body-fondo*/
+*{
+  margin:0;
+  padding:0;
+}
+body {
+  background:linear-gradient(to top, rgba(0, 0, 34, 0.965), rgba(0, 0, 18, 0.907)),url("../image/fondo.jpg");
+  background-size:contain;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+}
+/*body-scroll*/
+body::-webkit-scrollbar {
+  width: 8px;
+  background-color: #000;
+}
+body::-webkit-scrollbar-thumb {
+  background: lime;
+  border-radius: 30px;
+}
+
+/*menu nav*/
+.menu {
+  background: linear-gradient(to top, rgb(0, 3, 1), rgb(5, 78, 1));
+  margin: auto;
+  width: 100%;
+  padding: 20px 20px;
+  letter-spacing: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  position:fixed;
+  top: 0;
+}
+.nav-link-logo {
+  -webkit-text-stroke: 2px aqua;
+  padding-right: 400px;
+  font-size: 25px;
+  text-decoration: none;
+}
+.nav-link {
+  padding:5px 19px;
+  font-size: 15px;
+  -webkit-text-stroke: 1px lime;
+  text-decoration: none;
+  transition-duration: 1.5s;
+}
+.nav-link:hover{
+  cursor: pointer;
+  border:0.5px aqua;
+  box-shadow: 0px 1px 10px aqua;
+  -webkit-text-stroke: 1px aqua;
+}
+.nav-link-logo:hover{
+  cursor: pointer;
+  -webkit-text-stroke: .5px aqua;
+}
+
+/*logo*/
+.logo{
+  background-image: url("../image/log.jpg");
+  box-shadow: 0px 0px 20px 10px rgb(3, 217, 24);
+  background-size:cover;
+  background-position: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 420px;
+  height: 420px;
+  margin: 150px auto 50px auto;
+  display: flex;
+  transition-duration: 1.5s;
+}
+.logo:hover{
+  background:linear-gradient(to top, rgba(0, 3, 1, 0.601), rgba(13, 205, 3, 0.757)),url("../image/logo.jpg");
+  cursor: pointer;
+  box-shadow: 0px 0px 20px 10px rgb(14, 1, 52);
+}
+
+/*titulo (ricki y morty)*/
+h1{
+  color:rgba(0, 0, 32, 0.833);
+  position: absolute;
+  align-self: center;
+  font-size: 50px;
+  letter-spacing: 8px;;
+  border-radius: 20px;
+  transition: all 100ms;
+  visibility: hidden;
+}
+.logo:hover h1 {
+  visibility: visible;
+}
+
+/*subtitulo(personajes)*/
+.subtitulo{
+  background:linear-gradient(to top, rgb(1, 72, 107), rgb(0, 56, 14));
+  box-shadow: 0px 0px 8px 1px rgb(7, 86, 189);
+  text-align: center;
+  border-radius: 20px;
+  padding: 8px 8px;
+  margin: 170px auto 10px auto;
+  width: 300px;
+  letter-spacing: 10px;
+  transition-duration: 1.4s;
+  color:rgba(0, 0, 32, 0.833);
+}
+.subtitulo:hover{
+  transform:translateY(-20px);
+  cursor: pointer;
+  color: lime
+}
+
+/*Boton buscar*/
+.buscar{
+  width: 323px; /*ancho por defecto*/
+  background:linear-gradient(to top, rgb(1, 72, 107), rgb(0, 56, 14));
+  border-color:rgba(0, 0, 32, 0.833);
+  color:rgba(0, 0, 32, 0.833);
+  box-shadow: 0px 0px 8px 1px rgb(7, 86, 189);
+  padding: 5px 6px;
+  margin: 50px 0px 2px 75px;
+  border-radius: 10px;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+.filtro{
+  display: none;
+}
+
+/*tarjetas*/
+.tarjetas{
+  display: flex;
+  width: 95%;
+  margin: 40px auto;
+  flex-wrap: wrap;
+  gap: 90px;
+  justify-content: center;
+  letter-spacing: 5px;
+}
+.tarjeta{
+  max-width: 300px;
+  padding: 30px 20px 15px 20px;
+  border-radius: 15px ;
+  box-shadow: 0px 0px 30px 1px lime;
+  text-align: center;
+  transition-duration: 0.5s;
+}
+.tarjeta:hover{
+  cursor: pointer;
+  box-shadow: 0px 0px 35px 2px rgb(7, 86, 189);
+  transform: translateY(-5px);
+}
+.tarjetas img{
+  margin-bottom: 10px;
+  border: 1px;
+  border-radius: 50%;
+  width: 300px;
+}
+.tarjetas .name{
+  background:linear-gradient(to top, rgb(1, 72, 107), rgb(0, 56, 14));
+  color: lime;
+  padding: 5px 5px;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  border-radius: 10PX;
+  font-family:initial;
+}
+.tarjeta:hover .name{
+  background: black;
+  color: rgb(7, 86, 189);
+}
+
+/*pie de pagina*/
+footer{
+  background:linear-gradient(to top, rgba(2, 0, 10, 0.835), rgba(0, 2, 51, 0.844)),url("../image/pie.jpg");
+  background-position: center;
+  color: lime;
+  font-family:initial;
+  box-shadow: 0px 0px 30px 1px lime;
+  text-align: center;
+  margin: 200px 20px 100px 20px;
+  padding: 50px 5px;
+  border-radius: 20px;
+}
+
+.autor{
+  transition-duration: 1.4s;
+  margin-bottom: 30px;
+}
+.autor:hover{
+  text-transform: uppercase;
+  color:aqua;
+  letter-spacing: 5px;
+  cursor: pointer;
+}
+.contacto img{
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+  margin-left: 10px;
+  border-radius: 50px;
+  transition-duration: 1.4s;
+}
+.contacto img:hover{
+  box-shadow: 0px 0px 15px 1px lime;
+  transform:translateY(-5px);
+  cursor:pointer;
+}
+
+@media (max-width: 700px){
+  .nav-link{
+    visibility: hidden;
+  }
+  .nav-link-logo{
+    width: 100%;
+  }
+  .logo{
+    width: 250px;
+    height: 250px;
+  }
+  .logo:hover h1 {
+    font-size: 20px;
+    visibility: visible;
+  }
+  .buscar{
+    width: 250px;
+  }
+  .tarjeta{
+    max-width: 300px;
+  }
+  .tarjeta img{
+    width: 250px;
+  }
+}
+
+
+
